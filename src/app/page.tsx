@@ -1,3 +1,4 @@
+import BestMarkets from "@/components/BestMarkets";
 import CustomNavbar from "@/components/CustomNavbar";
 import Hero from "@/components/Hero";
 import QuickStart from "@/components/QuickStart";
@@ -8,6 +9,7 @@ export default function Home() {
       <CustomNavbar />
       <Hero />
       <QuickStart />
+      <BestMarkets />
     </main>
   );
 }
