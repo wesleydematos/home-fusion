@@ -11,6 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        white: "#FFFFFF",
+        black: "#000000",
         "txt-blue": "#016FED",
         "txt-grey": "#71717A",
         "txt-black ": "#1C1C1E",
@@ -18,9 +20,25 @@ const config: Config = {
       backgroundImage: {
         "custom-gradient": "linear-gradient(180deg, #E6F1FE 0%, #CCE3FD 100%)",
       },
+      boxShadow: {
+        "custom-light": "0px 4px 24px 0px #0000000F",
+        "custom-dark": "0px 4px 16px 0px #0000000A",
+      },
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      addCommonColors: true,
+      themes: {
+        light: {
+          colors: {},
+        },
+        dark: {
+          colors: {},
+        },
+      },
+    }),
+  ],
 };
 export default config;
