@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useRef, useState } from "react";
@@ -27,9 +28,9 @@ export default function Hero() {
   const [maxPrice, setMaxPrice] = useState("");
   const [tempPriceRange, setTempPriceRange] = useState("");
 
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const handleStrategyChange = (key) => {
+  const handleStrategyChange = (key: any) => {
     const strategies = {
       fixandflip: "🔨 Fix & Flip",
       seller: "💵 Seller financing",
@@ -41,7 +42,7 @@ export default function Hero() {
     setStrategy(strategies[key] || "Escolha uma estratégia");
   };
 
-  const handleMarketChange = (key) => {
+  const handleMarketChange = (key: any) => {
     setMarket(key + " - Flórida");
   };
 
