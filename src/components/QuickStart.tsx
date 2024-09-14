@@ -11,7 +11,7 @@ export default function QuickStart() {
         {steps.map((step) => (
           <div
             key={step.step}
-            className="relative flex flex-col items-center text-center bg-white border rounded-lg shadow-lg p-4"
+            className="mt-16 sm:mt-0 relative flex flex-col items-center text-center bg-white border rounded-lg shadow-lg p-4"
           >
             <div className="absolute -top-28">
               <Image
